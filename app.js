@@ -1,33 +1,24 @@
-// 201
-// 1-mon-lecture/code-demo js
-
 var userName = prompt('What is your name?');
-console.log('Meow Meow Meow ' + userName + '!!!!');
+console.log(' Hello, ' + userName + ' I hope you enjoy this totally not a Mad lib rip off');
 
-console.log('userGame before prompt: ', userGame);
-var userGame = prompt('What is your game?');
-console.log('userGame after prompt: ', userGame);
-alert('So, ' + userName + ', I heard you like ' + userGame);
+var userAdjective = prompt('Name an adjective');
+console.log(' The adjective you have choosen is ' + userAdjective);
 
-var loveHate = confirm(userName + ' do you love interweb?');
-alert('Does, ' + userName + ' love interweb? ' + loveHate);
+var userNoun = prompt('Name a noun');
+console.log(' You have choosen ' + userNoun);
 
-var userFood = prompt('What is your favorite food?');
-console.log(userName + 'likes' + userFood);
+var userVerb = prompt('Suggest a verb');
+console.log(' The verb you have choosen is ' + userVerb);
 
-var userColor = prompt('What is your favorite color?');
-console.log(userName + 'likes' + userColor);
-alert(userName + 'likes' + userColor);
+var userPlace = prompt('Name a place');
+console.log(' The place you have choosen is ' + userPlace);
 
-var userLinux = confirm(userName + 'do you use Linux?');
-console.log(userLinux + userName + 'like linux');
+var userReady = confirm(userName + ' Are you ready to hear your totally not a Mad lib rip off? ');
+console.log(userReady);
 
-var userCar = prompt('What kind of car do you drive?');
-console.log(userName + 'drives' + userCar);
-
-var userDog = prompt('What type of dog? is your favorite?');
-console.log(userName + 'prefers' + userDog);
-
-var userShave = confirm(userName + 'did you shave today?');
-console.log('Did' + userName + 'shave today' + userShave);
-alert(userName + 'likes' + userFood + userColor + userDog + 'drives' + userCar + 'uses Linux' + userLinux + 'did shave' + userShave);
+if (userReady === true)
+{
+alert(userName + ', your long lost cousin Jethro has passed. Although you did not know him, you are the only surviving relative. Secretly, Jethro was the ruler of ' + userPlace ' and keeper of the ' + userAdjective + userNoun. + 'Jethros final wish was for you to ' + userVerb + ' the ' + userNoun )}
+else {
+  alert(' Fine then, ' + userName + '. No story for you. Straight to bed. ')
+};
