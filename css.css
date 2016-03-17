@@ -6,3 +6,11 @@ body {
 h1 {
  font-family:sans-serif;
  color: blue;}
+
+ h2 {
+   /* make this purdy */
+ }
+
+div {
+  background: green; /* change background to a pic of dude from picture pages */
+}

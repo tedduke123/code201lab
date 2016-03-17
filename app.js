@@ -1,5 +1,5 @@
 var userName = prompt('What is your name?');
-console.log(' Hello, ' + userName + ' I hope you enjoy this totally not a Mad lib rip off');
+console.log(' Hello, ' + userName + ' Would you like to hear a story? ');
 
 var userAdjective = prompt('Name an adjective');
 console.log(' The adjective you have choosen is ' + userAdjective);
@@ -13,32 +13,31 @@ console.log(' The verb you have choosen is ' + userVerb);
 var userPlace = prompt('Name a place');
 console.log(' The place you have choosen is ' + userPlace);
 
-var userReady = confirm(userName + ' Are you ready to hear your totally not a Mad lib rip off? ');
+var userReady = confirm(userName + ' Click OK to hear your story ');
 console.log(userReady);
 
 if (userReady === true) {
-  alert(userName + ', your long lost cousin Jethro has passed. Although you did not know him, you are the only surviving relative. Secretly, Jethro was the ruler of ' + userPlace + ' and keeper of the ' + userAdjective + ' ' + userNoun + ' Jethros final wish was for you to ' + userVerb + ' the ' + userNoun)
+  alert(userName + ', your long lost cousin Jethro has passed. Although you did not know him, you are the only surviving relative. Secretly, Jethro was the ruler of ' + userPlace + ' and keeper of the ' + userAdjective + ' ' + userNoun + '. ' + ' Jethros final wish was for you to ' + userVerb + ' the ' + userNoun)
 } else {
   alert(' Fine then, ' + userName + '. No story for you. Straight to bed. ')
 };
 alert(' Hey there ' + userName + ', I\'m going to ask you some questions about me. Please click "ok", then answer Y or N to the next question.');
 
-
-
-
-
-
-
-
 var questionOne = prompt('Do I have brown hair?');
 console.log('userResponse:' + questionOne);
-if (questionOne.toLowerCase() === 'n' || questionOne.toUpperCase() === 'NO') {
-  alert('Nope. My hair is brown.');
-} else if (questionOne.toLowerCase() === 'y' || questionOne.toUpperCase() === 'YES') {
-  alert('Yes, my hair is brown');
-} else {
-  alert('Try again. Your response should be Y or N.');
+// while(keepsAsking = true){  //attempting to use a  while loop to repeat the question until answer is either Y or N
+// too many if - else repeats -  use a for loop and an array - hmmm....
+      if (questionOne.toLowerCase() === 'n' || questionOne.toUpperCase() === 'NO') {
+    alert('Nope. My hair is brown.');
+    (keepsAsking = true);
+  } else if (questionOne.toLowerCase() === 'y' || questionOne.toUpperCase() === 'YES') {
+    alert('Yes, my hair is brown');
+    (keepsAsking = true);
+  } else {
+    alert('Try again. Your response should be Y or N.');
+    (keepsAsking = false);
 }
+
 var questionTwo = prompt('Do I have two feet?');
 console.log('userResponse:' + questionTwo);
 if (questionTwo.toLowerCase() === 'n' || questionTwo.toUpperCase() === 'NO') {
