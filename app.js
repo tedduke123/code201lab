@@ -24,18 +24,25 @@ if (userReady === true) {
 alert(' Hey there ' + userName + ', I\'m going to ask you some questions about me. Please click "ok", then answer Y or N to the next question.');
 
 var questionOne = prompt('Do I have brown hair?');
+var counterquestionOne = 1;
+var keepsAsking = true;
 console.log('userResponse:' + questionOne);
-// while(keepsAsking = true){  //attempting to use a  while loop to repeat the question until answer is either Y or N
-// too many if - else repeats -  use a for loop and an array - hmmm....
+while(keepsAsking = true && counterquestionOne < 4){
+ // using a  while loop to repeat the question
+ // until answer is either Y, YES, Yes, yes, N, NO, No, no
+// too many if - else repeats -  use a for loop and an array
       if (questionOne.toLowerCase() === 'n' || questionOne.toUpperCase() === 'NO') {
-    alert('Nope. My hair is brown.');
-    (keepsAsking = true);
+    prompt(userName + ',' + ' Do I have brown hair? ');
+    keepsAsking = true;
+    counterquestionOne++;
   } else if (questionOne.toLowerCase() === 'y' || questionOne.toUpperCase() === 'YES') {
     alert('Yes, my hair is brown');
-    (keepsAsking = true);
+    keepsAsking = false;
   } else {
-    alert('Try again. Your response should be Y or N.');
-    (keepsAsking = false);
+    prompt(userName + ',' + ' Do I have brown hair? ' + ' Please choose Y or N '); // add how many attempts remaining
+    keepsAsking = true;
+    counterquestionOne++;
+  }
 }
 
 var questionTwo = prompt('Do I have two feet?');
@@ -82,4 +89,30 @@ if (questionSix.toLowerCase() === 'n' || questionSix.toUpperCase() === 'NO') {
   alert('Yes, I do have two ears.');
 } else {
   alert('Try again. Your response should be Y or N');
+}
+
+
+var counterquestionMath = 1;
+var mathQuestion = 0;
+var keepsAskingMath = true;
+console.log('userResponse:' + mathQuestion);
+
+while(counterquestionMath < 5 && keepsAskingMath === true){
+  mathQuestion = parseInt(prompt('Guess my favorite number'));
+if (Number.isInteger(mathQuestion) === true && mathQuestion < 0 ){
+  alert('Try a larger number');
+  counterquestionMath++;
+} else if (Number.isInteger(mathQuestion) === true && mathQuestion > 4){
+  alert('Try a smaller number');
+  counterquestionMath++;
+} else if (Number.isInteger(mathQuestion) === true && mathQuestion === 3){
+  alert("Nice. You got it.");
+  keepsAskingMath = false;
+} else if (Number.isInteger(mathQuestion) === false){
+  alert('Try again, please enter a number')
+  counterquestionMath++;
+} else {
+  alert('Try again, please enter a number')
+  counterquestionMath++;
+}
 };
