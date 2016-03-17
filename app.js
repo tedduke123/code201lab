@@ -27,15 +27,15 @@ var questionOne = prompt('Do I have brown hair?');
 console.log('userResponse:' + questionOne);
 // while(keepsAsking = true){  //attempting to use a  while loop to repeat the question until answer is either Y or N
 // too many if - else repeats -  use a for loop and an array - hmmm....
-      if (questionOne.toLowerCase() === 'n' || questionOne.toUpperCase() === 'NO') {
-    alert('Nope. My hair is brown.');
-    (keepsAsking = true);
-  } else if (questionOne.toLowerCase() === 'y' || questionOne.toUpperCase() === 'YES') {
-    alert('Yes, my hair is brown');
-    (keepsAsking = true);
-  } else {
-    alert('Try again. Your response should be Y or N.');
-    (keepsAsking = false);
+if (questionOne.toLowerCase() === 'n' || questionOne.toUpperCase() === 'NO') {
+  alert('Nope. My hair is brown.');
+  (keepsAsking = true);
+} else if (questionOne.toLowerCase() === 'y' || questionOne.toUpperCase() === 'YES') {
+  alert('Yes, my hair is brown');
+  (keepsAsking = true);
+} else {
+  alert('Try again. Your response should be Y or N.');
+  (keepsAsking = false);
 }
 
 var questionTwo = prompt('Do I have two feet?');
