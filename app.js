@@ -91,15 +91,15 @@ if (questionSix.toLowerCase() === 'n' || questionSix.toUpperCase() === 'NO') {
   alert('Try again. Your response should be Y or N');
 }
 
-var questionSix = prompt('Do I write this just for the day04 merge?');
-console.log('userResponse:' + questionSix);
-if (questionSix.toLowerCase() === 'n' || questionSix.toUpperCase() === 'NO') {
-  alert('no.');
-} else if (questionThree.toLowerCase() === 'y' || questionThree.toLowerCase() === 'YES') {
-  alert('Yes');
-} else {
-  alert('Try again. Your response should be Y or N');
-}
+// question added to satisfy git branch exercise request - remove after var questionSix = prompt('Do I write this just for the day04 merge?');
+//console.log('userResponse:' + questionSix);
+///if (questionSix.toLowerCase() === 'n' || questionSix.toUpperCase() === 'NO') {
+//  alert('no.');
+//} else if (questionThree.toLowerCase() === 'y' || questionThree.toLowerCase() === 'YES') {
+//  alert('Yes');
+//} else {
+//  alert('Try again. Your response should be Y or N');
+//}
 
 
 var counterquestionMath = 1;
