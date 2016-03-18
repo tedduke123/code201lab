@@ -91,6 +91,16 @@ if (questionSix.toLowerCase() === 'n' || questionSix.toUpperCase() === 'NO') {
   alert('Try again. Your response should be Y or N');
 }
 
+var questionSix = prompt('Do I write this just for the day04 merge?');
+console.log('userResponse:' + questionSix);
+if (questionSix.toLowerCase() === 'n' || questionSix.toUpperCase() === 'NO') {
+  alert('no.');
+} else if (questionThree.toLowerCase() === 'y' || questionThree.toLowerCase() === 'YES') {
+  alert('Yes');
+} else {
+  alert('Try again. Your response should be Y or N');
+}
+
 
 var counterquestionMath = 1;
 var mathQuestion = 0;
@@ -116,3 +126,9 @@ if (Number.isInteger(mathQuestion) === true && mathQuestion < 0 ){
   counterquestionMath++;
 }
 };
+//tally the total number of questions answered correctly
+//var questionsCorrect = 0;
+//return 'You got ' + questionsCorrect + ' out of 5 questions correct,' + userName 'You can do even better next time.';
+//add a 5th question to my guessing game that accepts multiple possible correct answers that are stored in an array, for instance, //"Can you guess a state that I have lived in besides Washington?"
+
+//
