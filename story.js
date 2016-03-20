@@ -19,5 +19,5 @@ console.log(userReady);
 if (userReady === true) {
   alert(userName + ', your long lost cousin Jethro has passed. Although you did not know him, you are the only surviving relative. Secretly, Jethro was the ruler of ' + userPlace + ' and keeper of the ' + userAdjective + ' ' + userNoun + '. ' + ' Jethros final wish was for you to ' + userVerb + ' the ' + userNoun)
 } else {
-  alert(' Fine then, ' + userName + '. No story for you. Straight to bed. ')};
-  
+  alert(' Fine then, ' + userName + '. No story for you. Straight to bed. ')
+};
